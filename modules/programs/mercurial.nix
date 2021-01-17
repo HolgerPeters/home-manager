@@ -42,7 +42,8 @@ in {
       tweakDefaults = mkOption {
         type = types.bool;
         description = "Enable functionality that the average user probably wants on by default";
-	default = false;
+	example = "tweakdefaults = true;";
+        default = false;
       };
 
       userEmail = mkOption {
