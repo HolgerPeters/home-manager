@@ -25,6 +25,13 @@ in {
         type = types.attrsOf types.string;
         default = {};
         description = "Mercurial extensions to enable.";
+	example = ''
+	  extensions = {
+	    histedit = "";
+	    "hgext.convert" = "";
+	    purge = "";
+	  }
+	'';
       };
 
       userName = mkOption {
